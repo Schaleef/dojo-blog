@@ -9,8 +9,9 @@
     /* margin: 0;
     font-family: "Quicksand";
     color: #333; */
-@apply m-0 font-[Quicksand] text-[#333];
+    @apply m-0 font-[Quicksand] text-[#333];
 }
+
 .navbar {
     /* padding: 20px;
     display: flex;
@@ -18,54 +19,73 @@
     max-width: 600px;
     margin: 0 auto;
     border-bottom: 1px solid #f2f2f2; */
-@apply p-5 flex items-center max-w-[600px] m-auto border-b-2 border-solid border-[#f2f2f2];
+    @apply p-5 flex items-center max-w-[600px] m-auto border-b-2 border-solid border-[#f2f2f2];
 }
+
 .navbar h1 {
     /* color: #f1356d; */
-@apply text-[#f1356d] font-bold text-3xl;
+    @apply text-[#f1356d] font-bold text-3xl;
 }
+
 .navbar .links {
     /* margin-left: auto; */
-@apply ml-auto;
+    @apply ml-auto;
 }
+
 .navbar a {
     /* margin-left: 16px;
     text-decoration: none;
     padding: 6px; */
-@apply ml-4 no-underline p-2;
+    @apply ml-4 no-underline p-2;
 }
+
 .navbar a:hover {
     /* color: #f1356d; */
-@apply text-[#f1356d];
+    @apply text-[#f1356d];
 }
+
 .content {
     /* max-width: 600px;
     margin: 40px auto;
     padding: 20px; */
-@apply max-w-[600px] m-10 p-5;
+    @apply max-w-[600px] m-10 p-5;
 }
 
 /* .blog-preview / list */
 .blog-preview {
-/* padding: 10px 16px;
+    /* padding: 10px 16px;
 margin: 20px 0;
 border-bottom: 1px solid #fafafa; */
-@apply py-3 px-4 my-5 border-b-2 border-solid border-[#fafafa];
+    @apply py-3 px-4 my-5 border-b-2 border-solid border-[#fafafa];
 }
+
 .blog-preview:hover {
     /* box-shadow: 1px 3px 5px rgba(0,0,0,0.1); */
-@apply shadow-2xl;
+    @apply shadow-2xl;
 }
+
 .blog-preview h2 {
     /* font-size: 20px;
     color: #f1356d;
     margin-bottom: 8px; */
-@apply font-bold text-[#f1356d] mb-2; 
+    @apply font-bold text-[#f1356d] mb-2;
 }
+
 .blog-list .blog-title {
-@apply text-3xl
+    @apply text-3xl
 }
-.blog-preview a{
-    text-decoration:none
-@apply no-underline    
+
+.blog-preview a {
+    text-decoration: none @apply no-underline
+}
+
+/* blog details page */
+.blog-details h2 {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 10px;
+}
+
+.blog-details div {
+    margin: 20px 0;
 }
